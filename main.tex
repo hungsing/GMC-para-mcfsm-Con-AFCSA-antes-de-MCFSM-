@@ -480,7 +480,7 @@ Dados $\mathcal{P}$ un conjunto de participantes y $\mathcal{M}$ un conjunto de 
 \item $\delta_{ER} = \{ \delta_{ER \mathit{Int}} \cup \delta_{ER\mathit{Ex}} \cup \delta_{ER\mathit{Buf}}\}$
 \item $\delta_{ER\mathit{Int}} = Q_{ER} \times \Sigma_{ER\mathit{Int}} \times Q_{ER} $
 \item $\delta_{ER\mathit{Ex}}: Q_{ER} \times \{\mathit{In}(e,m), \mathit{Out}(e,m) | e \in \Sigma_{ER\mathit{Ex}} \land m \in \mathcal{M}\} \times Q_{ER}$ es la relación de transición de comunicación externa de $E||R_\mathcal{P}$,
-\item $\delta_{ER\mathit{Buf}}: Q_{ER} \times \Sigma_{ER\mathit{Buf}} \times Q$ y decimos que $\forall q \in Q_\mathit{ER}, \ m \in \mathcal{M} \ | \ \langle q, b_\mathit{ERi} \gg m, q' \rangle \in \delta_\mathit{ERBuff} \iff \exists \sigma_i \in s \land \sigma_i = b_\mathit{ERi} \ll m$  donde s es una secuencia de la forma $[q_1, \sigma_1, q_2,...,\sigma_n, q_n]$ con $q_n = q$% comunicación interna
+\item $\delta_{ER\mathit{Buf}}: Q_{ER} \times \Sigma_{ER\mathit{Buf}} \times Q$ y decimos que $\forall q \in Q_\mathit{ER}, \ m \in \mathcal{M} \ | \ \langle q, \omega_\mathit{ERi} \gg m, q' \rangle \in \delta_\mathit{ERBuff} \iff \exists \sigma_i \in s \land \sigma_i = \omega_\mathit{ERi} \ll m$  donde s es una secuencia de la forma $[q_1, \sigma_1, q_2,...,\sigma_n, q_n]$ con $q_n = q$% comunicación interna
 \item $q_0 = \langle q0_E,q0_R \rangle$
 \item $F_{ER} = F_E x F_R$
 
